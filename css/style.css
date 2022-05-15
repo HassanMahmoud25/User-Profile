@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&family=Montserrat:wght@300;900&family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@300&family=Rubik:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* rem */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    background-color: rgb(226,230,234);
+
+    padding: 3.2rem 1.4rem 1.2rem 1.4rem;
+}
+
+.container {
+    background-color: rgb(255,255,255);
+    max-width: 70rem;
+    margin: 12rem auto 0 auto;
+    padding: 4.8rem 4.8rem 2.4rem 4.8rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: relative;
+}
+
+.img-container {
+    background-color: rgb(226,230,234);
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.img-container img {
+    width: 100%;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user-data-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #333;
+}
+
+.edit-icon-container {
+    background-color: rgb(48,48,49);
+    border: 2px solid rgb(245,245,245);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.edit-icon {
+    color: white; 
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.edit-icon-container:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+.user-name {
+    margin-top: 6.4rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    
+    margin-bottom: 4.8rem;
+}
+
+
+.btn {
+    text-align: center;
+    padding: 1.8rem 3.2rem;
+    background-color: rgb(48,48,49);
+    color: white;
+    
+    text-decoration: none;
+    color: white;
+    
+    border: none;
+    font-size: 2rem;
+    
+    display: inline-block;
+     
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.manage {
+    margin-bottom: 2.4rem;
+    background-color: rgb(0,112,205);
+}
+
+.manage:hover {
+    background-color: rgb(0, 100, 181);
+}
+
+.reser,
+.donor {
+    width: 45%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2.4rem;
+}
+
+/* .manage-profile:hover {
+    background-color: rgba(48, 48, 49, 0.785);
+} */
+
+.user-data-list {
+    margin-top: 2.4rem;
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+
+    overflow-x: auto;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+.user-data p {
+    font-size: 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 490px) {
+    html {
+        font-size: 50%;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 2.4rem;
+        padding-left: 4.4rem;
+        padding-right: 4.4rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
